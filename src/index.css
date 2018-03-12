@@ -3,3 +3,40 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+.search-bar {
+  height: 20px;
+  width: 40%;
+  max-width: 250px;
+  min-width: 100px;
+  border: 1px lightgrey solid;
+  border-radius: 2px;
+  padding-left: 5px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.search-bar-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gif-names-container {
+  text-align: center;
+  margin: 25px 0 30px;
+  font-size: 0.7em;
+  display: inline-block;
+}
+
+.gif-names {
+  margin: 5px;
+  background-color: #f1d9e1;
+  padding: 4px 10px;
+  border-radius: 3px;
+  color: #333;
+}
+
+#page-container {
+  text-align: center;
+}
