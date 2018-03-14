@@ -5,16 +5,25 @@ body {
 }
 
 
-.search-bar {
+#search-bar {
   height: 20px;
   width: 40%;
   max-width: 250px;
   min-width: 100px;
   border: 1px lightgrey solid;
+  border-right: none;
   border-radius: 2px;
   padding-left: 5px;
   margin: 0 auto;
   background-color: #f1f1f1;
+}
+
+#search-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  background: #f1d9e1;
+  border-left: none;
 }
 
 .search-bar-container {
