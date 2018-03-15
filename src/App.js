@@ -13,7 +13,6 @@ class App extends Component {
       <BrowserRouter>
         <div id="page-container">
           <Navigation />
-          
         </div>
       </BrowserRouter>
     );
