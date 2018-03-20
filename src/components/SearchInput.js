@@ -3,9 +3,8 @@ import React from 'react';
 class SearchInput extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      searchGifs: ''
-    };
+    this.state = { searchGifs: '' }
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   // update state
@@ -20,13 +19,14 @@ class SearchInput extends React.Component {
 
   render() {
     return (
-      <form className="search-bar-container">
+      <form className="search-bar-container" onSubmit={this.handleSubmit}>
         <input 
           id="search-bar"
-          type="text" 
+          type="search" 
           placeholder="Search..." 
           name="Search" 
-          onSubmit={this.state.handleSubmit}
+          onChange={this.searchFlickr}
+          ref={(input) => this.query = input}
         />
         
         <button id="search-button">

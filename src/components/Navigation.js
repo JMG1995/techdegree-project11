@@ -1,20 +1,32 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// components
+import SearchInput from './SearchInput';
 
-function Navigation() {
-  return (
-      <ul className="gif-name-container">
-        <li className="gif-names">
-          <NavLink className="gif-names-text" gifname='Coffee' to='/search/coffee'>Coffee</NavLink>
-        </li>
-        <li className="gif-names">
-          <NavLink className="gif-names-text" to='/search/music'>Music</NavLink>
-        </li>
-        <li className="gif-names">
-          <NavLink className="gif-names-text" to='/search/nature'>Nature</NavLink>
-        </li>
-      </ul>
-  );
+class Navigation extends React.Component {
+
+  navigateURL = (query) => {
+    window.location.assign(`/search/${query}`);
+  }
+
+  render() {
+    return (
+      <div className="navigation-container">
+        <SearchInput onSubmit={this.navigateURL} />
+        <ul className="gif-name-container">
+          <li className="gif-names">
+            <NavLink className="gif-names-text" gifname='Coffee' to='/search/coffee'>Coffee</NavLink>
+          </li>
+          <li className="gif-names">
+            <NavLink className="gif-names-text" to='/search/music'>Music</NavLink>
+          </li>
+          <li className="gif-names">
+            <NavLink className="gif-names-text" to='/search/nature'>Nature</NavLink>
+          </li>
+        </ul>
+      </div>
+    );
+  }
 }
 
 export default Navigation;

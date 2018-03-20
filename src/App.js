@@ -35,10 +35,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div id="page-container">
-          <div className="navigation-container">
-            <SearchInput />
-            <Navigation />
-          </div>
+          <Navigation />
           <div className="main-content">
             <GifList data={this.state.gifs} />
           </div>
