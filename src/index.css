@@ -40,6 +40,20 @@ body {
 }
 
 /*
+ Homepage info
+*/
+
+#homepage-info {
+  width: 80%;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #333;
+  border: #f1d9e1 1px ridge;
+  max-width: 616px;
+}
+
+/*
  Gif names
 */
 

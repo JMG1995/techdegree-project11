@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import apiKey from './Config.js';
 
 // App components
 import SearchInput from './components/SearchInput';
 import Navigation from './components/Navigation';
 import GifList from './components/GifList';
+import Home from './components/Home';
 
 
 class App extends Component {
@@ -34,12 +35,15 @@ class App extends Component {
     console.log(this.state.gifs);
     return (
       <BrowserRouter>
-        <div id="page-container">
-          <Navigation />
-          <div className="main-content">
-            <GifList data={this.state.gifs} />
+        <Switch>
+          <div id="page-container">
+            <Navigation />
+            <Home />
+            <div className="main-content">
+              <GifList data={this.state.gifs} />
+            </div>
           </div>
-        </div>
+        </Switch>
       </BrowserRouter>
     );
   }
