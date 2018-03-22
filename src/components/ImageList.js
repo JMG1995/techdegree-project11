@@ -1,7 +1,7 @@
 import React from 'react';
-import Gif from './Gif';
+import Image from './Image';
 
-function GifList(props) {
+function ImageList(props) {
 
   const results = props.data;
   // let gifs = results.map(gif => {
@@ -10,9 +10,9 @@ function GifList(props) {
 
   return (
     <ul className="gif-list">
-      <Gif />
+      <Image />
     </ul>
   );
 }
 
-export default GifList;
+export default ImageList;

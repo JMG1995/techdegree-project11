@@ -49,7 +49,8 @@ body {
   font-style: italic;
   font-size: 0.8em;
   color: #333;
-  border: #f1d9e1 1px ridge;
+  border: #f1d9e1 1px solid;
+  border-radius: 5px;
   max-width: 616px;
 }
 

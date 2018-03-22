@@ -3,18 +3,18 @@ import React from 'react';
 class SearchInput extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { searchGifs: '' }
+    this.state = { searchImages: '' }
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   // update state
   searchFlickr = (e) => {
-    this.setState({ searchGifs: e.target.value });
+    this.setState({ searchImages: e.target.value });
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.onSubmit(this.state.searchGifs);
+    this.props.onSubmit(this.state.searchImages);
   }
 
   render() {
