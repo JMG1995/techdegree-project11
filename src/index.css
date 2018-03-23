@@ -71,7 +71,7 @@ body {
 .loading {
   height: 50px;
   width: 50px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   background: url('./images/loading.gif');
   background-size: cover;
 }
