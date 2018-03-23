@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import apiKey from './Config.js';
 
 // App components
 import SearchInput from './components/SearchInput';

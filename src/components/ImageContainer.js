@@ -52,7 +52,7 @@ class ImageContainer extends React.Component {
       if (this.state.hasPhotos || this.state.loading) {
         heading = 
           <div>
-            <h1 className="image-title">Now showing images of: {query}</h1>
+            <h1 className="image-title">{query}</h1>
           </div>
       }
 
