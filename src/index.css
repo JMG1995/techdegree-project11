@@ -45,15 +45,35 @@ body {
  Homepage info
 */
 
-#homepage-info {
+#homepage-info,
+.image-title {
   width: 80%;
   margin: 0 auto;
   font-style: italic;
   font-size: 0.8em;
   color: #333;
+  max-width: 616px;
+}
+
+.image-title {
+  font-weight: lighter;
+}
+
+#homepage-info {
   border: #f1d9e1 1px solid;
   border-radius: 5px;
-  max-width: 616px;
+}
+
+/*
+ Loading gif
+*/
+
+.loading {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background: url('./images/loading.gif');
+  background-size: cover;
 }
 
 /*

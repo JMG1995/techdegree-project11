@@ -15,7 +15,9 @@ class ImageContainer extends React.Component {
   }
 
   // Fetch images from API and set state
-  // @param query
+ /*
+  @param query
+ */
   showContent = (query) => {
     this.setState({ loading: true });
 
@@ -52,7 +54,7 @@ class ImageContainer extends React.Component {
       if (this.state.hasPhotos || this.state.loading) {
         heading = 
           <div>
-            <h1 className="image-title">{query}</h1>
+            <h1 className="image-title">Now showing images of: {query}</h1>
           </div>
       }
 
@@ -61,19 +63,19 @@ class ImageContainer extends React.Component {
           {heading}
           {
             (this.state.loading)
-            ? <div className="loading"> </div>
-            :
-            <div>
-              {
-                (photos.length > 0)
-                ? photos.map((photo) => {
-                  return (
-                    <Image id={photo.id} url={photo.url} source={photo.source} key={photo.id} />
-                  );
-                })
-                : <ImageNotFound />
-              }
-            </div>
+              ? <div className='loading'> </div>
+              :
+              <div>
+                {
+                  (photos.length > 0)
+                    ? photos.map((photo) => {
+                      return (
+                        <Image id={photo.id} url={photo.url} source={photo.source} key={photo.id} />
+                      );
+                    })
+                    : <ImageNotFound />
+                }
+              </div>
           }
         </div>
       );
