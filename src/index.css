@@ -16,7 +16,7 @@ body {
 #search-bar {
   height: 24px;
   width: 40%;
-  max-width: 250px;
+  max-width: 300px;
   min-width: 100px;
   border: 1px lightgrey solid;
   border-right: none;
@@ -57,6 +57,7 @@ body {
 
 .image-title {
   font-weight: lighter;
+  margin-bottom: 30px;
 }
 
 #homepage-info {
@@ -82,7 +83,7 @@ body {
 
 ul.gif-name-container {
   text-align: center;
-  margin: 25px 0 30px;
+  margin: 25px 0 15px;
   padding: 0;
 }
 
@@ -91,7 +92,7 @@ li {
   list-style-type: none;
 }
 
-.gif-names {
+.image-names {
   margin: 5px;
   padding: 3px;
   background-color: #f1d9e1;
@@ -105,7 +106,7 @@ li {
   text-align: center;
 }
 
-.gif-names-text {
+.image-names-text {
   text-align: center;
   vertical-align: middle;
   line-height: 20px;  
@@ -114,4 +115,33 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/*
+ Image container
+*/
+
+.image-container {
+  margin: 0 auto;
+}
+
+.photo {
+  margin: 5px 15px;
+  border: 1px solid #f1d9e1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*
+  ##### Media Queries #####
+*/
+
+@media only screen and (min-width: 768px) {
+
+.image-container {
+  width: 90%;
+  max-width: 900px;
+}
+
+
 }

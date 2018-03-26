@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // App components
 import Navigation from './components/Navigation';
-import ImageList from './components/ImageList';
 import Home from './components/Home';
 import ImageContainer from './components/ImageContainer';
 
@@ -25,12 +24,9 @@ class App extends Component {
             <Navigation />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/search/" component={Home} />
               <Route path="/search/:query" component={ImageContainer} />
-
             </Switch>
-            <div className="main-content">
-              <ImageList data={this.state.photos} />
-            </div>
           </div>
       </BrowserRouter>
     );

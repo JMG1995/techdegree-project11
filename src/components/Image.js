@@ -1,11 +1,14 @@
 import React from 'react';
 
-function Image(props) {
-  return (
-    <li className="image-wrapper">
-       {/* <img className="image" src={this.props.source} alt="" />  */}
-    </li>
-  );
+class Image extends React.Component {
+
+  render() {
+    return (
+      <a href={this.props.url} target="_blank">
+        <img className='photo' src={this.props.source} alt='' />
+      </a>
+    );
+  }
 }
 
 export default Image;

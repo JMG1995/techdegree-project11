@@ -5,7 +5,7 @@ function ImageList(props) {
 
 
   return (
-    <ul className="gif-list">
+    <ul className="image-list">
       <Image />
     </ul>
   );

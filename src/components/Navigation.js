@@ -14,14 +14,14 @@ class Navigation extends React.Component {
       <div className="navigation-container">
         <SearchInput onSubmit={this.navigateURL} />
         <ul className="gif-name-container">
-          <li className="gif-names">
-            <NavLink className="gif-names-text" gifname='Coffee' to='/search/coffee'>Coffee</NavLink>
+          <li className="image-names">
+            <NavLink className="image-names-text" gifname='Coffee' to='/search/coffee'>Coffee</NavLink>
           </li>
-          <li className="gif-names">
-            <NavLink className="gif-names-text" to='/search/music'>Music</NavLink>
+          <li className="image-names">
+            <NavLink className="image-names-text" to='/search/music'>Music</NavLink>
           </li>
-          <li className="gif-names">
-            <NavLink className="gif-names-text" to='/search/nature'>Nature</NavLink>
+          <li className="image-names">
+            <NavLink className="image-names-text" to='/search/nature'>Nature</NavLink>
           </li>
         </ul>
       </div>
