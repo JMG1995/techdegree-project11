@@ -56,29 +56,29 @@ class ImageContainer extends React.Component {
           <div>
             <h1 className="image-title">Now showing images of: {query}</h1>
           </div>
-      }
 
-      return (
-        <div>
-          {heading}
-          {
-            (this.state.loading)
-              ? <div className='loading'> </div>
-              :
-              <div>
-                {
-                  (photos.length > 0)
-                    ? photos.map((photo) => {
-                      return (
-                        <Image id={photo.id} url={photo.url} source={photo.source} key={photo.id} />
-                      );
-                    })
-                    : <ImageNotFound />
-                }
-              </div>
-          }
-        </div>
-      );
+        return (
+          <div>
+            {heading}
+            {
+              (this.state.loading)
+                ? <div className='loading'> </div>
+                :
+                <div>
+                  {
+                    (photos.length > 0)
+                      ? photos.map((photo) => {
+                        return (
+                          <Image id={photo.id} url={photo.url} source={photo.source} key={photo.id} />
+                        );
+                      })
+                      : <ImageNotFound />
+                  }
+                </div>
+            }
+          </div>
+        );
+      }
     }
   }
 

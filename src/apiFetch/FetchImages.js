@@ -13,11 +13,13 @@ export default (query) => {
       // create photo request
       const photoRequest = photos.map((photo) => {
         const id = photo.id;
+
         return axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=${apiKey}&photo_id=${id}&per_page=24&format=json&nojsoncallback=1`)
           .then(size => {
             size.id = id;
             return size;
           });
+
       });
       // fire off photo request
       return Promise.all(photoRequest);
@@ -29,6 +31,8 @@ export default (query) => {
         // Takes the small photo and returns it with the ID
         return Object.assign(size, { id: photo.id });
       });
+
+      return mediumPhotos;
     })
     .catch(function(error) {
       console.log('Error fetching data', error);

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // App components
-import SearchInput from './components/SearchInput';
 import Navigation from './components/Navigation';
 import ImageList from './components/ImageList';
 import Home from './components/Home';
