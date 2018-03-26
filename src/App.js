@@ -14,12 +14,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      images: []
+      photos: []
     };
   }
 
   render() {
-    console.log(this.state.images);
+    console.log(this.state.photos);
     return (
       <BrowserRouter>
           <div id="page-container">
@@ -30,7 +30,7 @@ class App extends Component {
 
             </Switch>
             <div className="main-content">
-              <ImageList data={this.state.images} />
+              <ImageList data={this.state.photos} />
             </div>
           </div>
       </BrowserRouter>
