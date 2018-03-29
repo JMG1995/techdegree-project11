@@ -26,13 +26,13 @@ export default (query) => {
     })
     .then((photos) => {
       // Format the response so React is happy for ID's -- Taken from @haleyward via GitHub
-      const mediumPhotos = photos.map((photo) => {
+      const LargeSquarePhotos = photos.map((photo) => {
         const size = photo.data.sizes.size.find((size) => size.label === 'Large Square');
         // Takes the small photo and returns it with the ID
         return Object.assign(size, { id: photo.id });
       });
 
-      return mediumPhotos;
+      return LargeSquarePhotos;
     })
     .catch(function(error) {
       console.log('Error fetching data', error);

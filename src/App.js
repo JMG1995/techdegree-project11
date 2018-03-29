@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import ImageContainer from './components/ImageContainer';
+import PageNotFound from './components/PageNotFound';
 
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/search/" component={Home} />
               <Route path="/search/:query" component={ImageContainer} />
+              <Route path="*" component={PageNotFound} />
             </Switch>
           </div>
       </BrowserRouter>
