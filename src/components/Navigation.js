@@ -5,6 +5,11 @@ import SearchInput from './SearchInput';
 
 class Navigation extends React.Component {
 
+ /**
+   * Navigates to a new search route based on user input
+   * @param query
+   */
+
   navigateURL = (query) => {
     window.location.assign(`/search/${query}`);
   }
@@ -15,7 +20,7 @@ class Navigation extends React.Component {
         <SearchInput onSubmit={this.navigateURL} />
         <ul className="gif-name-container">
           <li className="image-names">
-            <NavLink className="image-names-text" gifname='Coffee' to='/search/coffee'>Coffee</NavLink>
+            <NavLink className="image-names-text" to='/search/coffee'>Coffee</NavLink>
           </li>
           <li className="image-names">
             <NavLink className="image-names-text" to='/search/music'>Music</NavLink>
@@ -27,6 +32,6 @@ class Navigation extends React.Component {
       </div>
     );
   }
-}
+};
 
 export default Navigation;

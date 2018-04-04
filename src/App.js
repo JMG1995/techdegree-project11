@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 // App components
 import Navigation from './components/Navigation';
@@ -8,29 +8,25 @@ import ImageContainer from './components/ImageContainer';
 import PageNotFound from './components/PageNotFound';
 
 
-class App extends Component {
+class App extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      photos: []
+      searchInput: ''
     };
   }
 
   render() {
-    console.log(this.state.photos);
     return (
-      <BrowserRouter>
           <div id="page-container">
             <Navigation />
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/search/" component={Home} />
-              <Route path="/search/:query" component={ImageContainer} />
+              <Route exact path="/" component={Home} /> 
+              <Route exact path="/search/:query" component={ImageContainer} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </div>
-      </BrowserRouter>
     );
   }
 }

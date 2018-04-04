@@ -1,12 +1,13 @@
 import React from 'react';
 
-function ImageNotFound() {
+const ImageNotFound = () => {
   return (
-    <div>
-      <h1>No Results Found:</h1> 
-      <p>Please try another search term.</p>
-    </div>
+      <div>
+        <h2>No Images Found:</h2>
+        <p>Please try another search parameter</p>
+      </div>
   );
-}
+  };
+
 
 export default ImageNotFound;

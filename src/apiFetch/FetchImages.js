@@ -1,9 +1,10 @@
 import apiKey from '../Config';
 import axios from 'axios';
-/*
-@param query
-@returns promise
-*/
+/**
+ * Makes a request to the flickr API for photos.
+ * @param query - items to query flickr for
+ * @returns promise
+ */
 
 export default (query) => {
   return axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=16&format=json&nojsoncallback=1`)

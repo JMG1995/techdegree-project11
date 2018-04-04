@@ -1,9 +1,10 @@
-import React from 'react';
+
 // components
 import FetchImages from '../apiFetch/FetchImages';
 import Capitalize from '../helper/Capitalize';
 import ImageNotFound from './ImageNotFound';
 import Image from './Image';
+import React from 'react';
 
 class ImageContainer extends React.Component {
   constructor(props){
@@ -15,9 +16,10 @@ class ImageContainer extends React.Component {
   }
 
   // Fetch images from API and set state
- /*
-  @param query
- */
+ /**
+   * Fetches images from API and sets state for the component
+   * @param query
+   */
   showContent = (query) => {
     this.setState({ loading: true });
 
@@ -37,7 +39,7 @@ class ImageContainer extends React.Component {
     }
 
     // called to update images
-    componentWillReceive = (nextProps) => {
+    componentWillReceiveProps = (nextProps) => {
       const currentQuery = this.props.match.params.query;
       const nextQuery = nextProps.match.params.query;
 
@@ -66,7 +68,7 @@ class ImageContainer extends React.Component {
                 :
                 <div className="image-container">
                   {
-                    (photos.length > 0)
+                    (this.state.hasPhotos)
                       ? photos.map((photo) => {
                         return (
                           <Image id={photo.id} url={photo.url} source={photo.source} key={photo.id} />
