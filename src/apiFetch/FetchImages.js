@@ -22,14 +22,14 @@ export default (query) => {
           });
 
       });
-      // send request
+      // fire off photo request
       return Promise.all(photoRequest);
     })
     .then((photos) => {
       // Format the response so React is happy for ID's -- Taken from @haleyward via GitHub
       const LargeSquarePhotos = photos.map((photo) => {
         const size = photo.data.sizes.size.find((size) => size.label === 'Large Square');
-        // Takes the photo and returns it with the ID
+        // Takes the small photo and returns it with the ID
         return Object.assign(size, { id: photo.id });
       });
 

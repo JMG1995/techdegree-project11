@@ -6,7 +6,7 @@ import ImageNotFound from './ImageNotFound';
 import Image from './Image';
 import React from 'react';
 
-// Component for rendered images
+// Class component for all rendered images
 class ImageContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +38,8 @@ class ImageContainer extends React.Component {
     this.showContent(this.props.match.params.query);
   }
 
-  // Updates images when url changes
+  // Called when the route path changes, so we can
+  // update the images
   componentWillReceiveProps = (nextProps) => {
     const currentQuery = this.props.match.params.query;
     const nextQuery = nextProps.match.params.query;

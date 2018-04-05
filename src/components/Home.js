@@ -1,6 +1,5 @@
 import React from 'react';
 
-// basic explanation of how to use the app
 function Home() {
   return (
     <div id="homepage-info">

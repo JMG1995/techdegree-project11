@@ -3,7 +3,7 @@ import Image from './Image';
 
 function ImageList(props) {
 
-// ul list containing the images
+
   return (
     <ul className="image-list">
       <Image />

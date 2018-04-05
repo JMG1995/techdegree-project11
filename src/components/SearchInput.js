@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-//searchbar and functionality
 class SearchInput extends React.Component {
   constructor(props) {
     super(props);
@@ -14,7 +12,6 @@ class SearchInput extends React.Component {
     this.setState({ searchImages: e.target.value });
   }
 
-  // prevent hard refresh on click and submit functionality
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.searchImages);

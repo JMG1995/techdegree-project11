@@ -19,12 +19,10 @@ class App extends React.Component {
 
   render() {
     return (
-      // app layout
           <div id="page-container">
             <Navigation />
             <Switch>
               <Route exact path="/" component={Home} /> 
-              {/* :query is whatever the user searches */}
               <Route exact path="/search/:query" component={ImageContainer} />
               <Route path="*" component={PageNotFound} />
             </Switch>
