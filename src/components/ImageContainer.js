@@ -67,7 +67,7 @@ class ImageContainer extends React.Component {
           (this.state.loading)
             ? <div className='loading'> </div>
             :
-            <div>
+            <div className="image-container">
               {
                 (this.state.hasPhotos)
                   ? photos.map((photo) => {
