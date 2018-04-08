@@ -11,13 +11,13 @@ class Navigation extends React.Component {
         <SearchField />
         <ul className="gif-name-container">
           <li className="image-names">
-            <NavLink className="image-names-text" to='/search/coffee'>Coffee</NavLink>
+            <NavLink className="image-names-text" to='/coffee'>Coffee</NavLink>
           </li>
           <li className="image-names">
-            <NavLink className="image-names-text" to='/search/music'>Music</NavLink>
+            <NavLink className="image-names-text" to='/music'>Music</NavLink>
           </li>
           <li className="image-names">
-            <NavLink className="image-names-text" to='/search/nature'>Nature</NavLink>
+            <NavLink className="image-names-text" to='/nature'>Nature</NavLink>
           </li>
         </ul>
       </div>

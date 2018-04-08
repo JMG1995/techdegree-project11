@@ -11,7 +11,7 @@ class SearchField extends React.Component {
   navigateURL = (query) => {
     window.location.assign(`/search/${query}`);
   }
-  
+
   render() {
     return(
       <SearchInput onSubmit={this.navigateURL} />
