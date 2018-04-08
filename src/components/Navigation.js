@@ -1,23 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 // components
-import SearchInput from './SearchInput';
+import SearchField from './SearchField';
 
 class Navigation extends React.Component {
-
-  /**
-    * Navigates to a new search route based on user input
-    * @param query
-    */
-
-  navigateURL = (query) => {
-    window.location.assign(`/search/${query}`);
-  }
 
   render() {
     return (
       <div className="navigation-container">
-        <SearchInput onSubmit={this.navigateURL} />
+        <SearchField />
         <ul className="gif-name-container">
           <li className="image-names">
             <NavLink className="image-names-text" to='/search/coffee'>Coffee</NavLink>
