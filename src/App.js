@@ -6,7 +6,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import ImageContainer from './components/ImageContainer';
 import PageNotFound from './components/PageNotFound';
-import SearchInput from './components/SearchInput';
+
 
 
 class App extends React.Component {
@@ -23,11 +23,12 @@ class App extends React.Component {
       // app layout
           <div id="page-container">
             <Navigation />
-            <Switch>
-              <Route exact path="/" component={Home} /> 
-              {/* :query is whatever the user searches */}
-              <Route path="/:query" component={ImageContainer} />
-              <Route path="*" component={PageNotFound} />
+              <Switch>
+                <Route exact path="/search" component={Home} />
+                <Route exact path="/" component={Home} /> 
+                {/* :query is whatever the user searches */}
+                <Route path="/search/:query" component={ImageContainer} />
+                <Route path="*" component={PageNotFound} />
             </Switch>
           </div>
     );

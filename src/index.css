@@ -36,7 +36,8 @@ body {
   border-left: none;
 }
 
-.search-bar-container {
+.search-bar-container,
+#search-button-container {
   text-align: center;
   margin-top: 40px;
 }
@@ -100,7 +101,8 @@ li {
   list-style-type: none;
 }
 
-.image-names {
+.image-names,
+.search-button {
   margin: 5px;
   padding: 3px;
   background-color: #f1d9e1;
@@ -114,7 +116,12 @@ li {
   text-align: center;
 }
 
-.image-names-text {
+.search-button {
+  height: 26px;
+  border: 1px solid #eac2d0;
+}
+
+.image-names-text{
   text-align: center;
   vertical-align: middle;
   line-height: 20px;  

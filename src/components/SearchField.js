@@ -14,7 +14,7 @@ class SearchField extends React.Component {
 
   render() {
     return(
-      <SearchInput onSubmit={this.navigateURL} />
+        <SearchInput onSubmit={this.navigateURL} />
     );
   }
 }; 
