@@ -13,6 +13,7 @@ To use, please create a file named 'Config.js' in the src directory and set it u
 You can get your API Key from [the Flickr website](https://www.flickr.com/services/api/misc.api_keys.html).
 
 If you find any issues, please feel free to let me know.
+
 Regards,
 
 Joseph
