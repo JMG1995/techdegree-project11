@@ -2,7 +2,11 @@
   "name": "js-files",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jmg1995.github.io/techdegree-project11",
+<<<<<<< HEAD
+  "homepage": "https://jmg1995.github.io/techdegree-project11/",
+=======
+  "homepage": "https://jmg1995.github.io/techdegree-project11/",
+>>>>>>> 4f56ed2699fc0c98fc87823ceb1602a2909a62d7
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^1.1.0",
