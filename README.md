@@ -3,7 +3,7 @@
 This project was an introduction to using React in a real world application. It uses the 'axios' API to fetch data from the Flickr site and display it on the screen.
 
 ## Setting up:
-To view this application, download the files from [Github](https://github.com/JMG1995/techdegree-project11), create a file named 'Config.js' in the src directory and set it up as follows:
+To use this application, create a file named 'Config.js' in the src directory and set it up as follows:
   
     
     const apiKey = 'YOUR_API_KEY';
